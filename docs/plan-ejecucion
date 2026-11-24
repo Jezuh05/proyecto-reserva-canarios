@@ -1,1 +1,23 @@
+# Plan de ejecución - MundoCanario
 
+## Distribución temporal y calendario del curso
+El desarrollo se organiza entre finales de noviembre de 2026 y principios de marzo de 2027, con una dedicación media de 6 a 8 horas semanales. En la planificación se tienen en cuenta dos momentos clave del calendario escolar:
+- **Vacaciones de Navidad (23/12/2026 al 06/01/2027):** Se pausa el avance de código nuevo para repasar lo hecho y no pillarse los dedos.
+- **Exámenes y entregas de otros módulos (principios de febrero):** Se reducen las horas de programación a lo mínimo para priorizar las pruebas de las demás asignaturas.
+
+## Tabla de tareas, fechas reales y dependencias
+
+| ID | Tarea | Inicio | Fin | Predecesora / Dependencia |
+| :--- | :--- | :--- | :--- | :--- |
+| **T01** | Entorno y repositorio | 30/11/2026 | 06/12/2026 | Ninguna |
+| **T02** | Diseño de base de datos | 07/12/2026 | 13/12/2026 | T01 |
+| **T03** | Configuración de persistencia | 14/12/2026 | 20/12/2026 | T02 |
+| **T04** | API de autenticación | 07/01/2027 | 13/01/2027 | T03 (tras Navidad) |
+| **T05** | API de catálogo y aves | 14/01/2027 | 20/01/2027 | T02 y T04 |
+| **T06** | API de reservas y bloqueo | 21/01/2027 | 27/01/2027 | T05 |
+| **T07** | Maquetación del catálogo | 14/01/2027 | 20/01/2027 | Paralela a T05 |
+| **T08** | Maquetación de paneles | 21/01/2027 | 27/01/2027 | Paralela a T06 |
+| **T09** | Integración cliente-servidor | 28/01/2027 | 10/02/2027 | T06, T07 y T08 |
+| **T10** | Pruebas de funcionamiento | 11/02/2027 | 17/02/2027 | T09 |
+| **T11** | Despliegue en la nube | 18/02/2027 | 24/02/2027 | T10 |
+| **T12** | Documentación y cierre | 25/02/2027 | 07/03/2027 | T11 |
